@@ -1,0 +1,142 @@
+body, .main-bg {
+  min-height: 100vh;
+  background: #102820;
+  margin: 0;
+  font-family: 'Noto Sans', 'Inter', Arial, sans-serif;
+}
+
+.main-bg {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.card-container {
+  background: #18392b;
+  border-radius: 24px;
+  box-shadow: 0 4px 32px rgba(0,0,0,0.18);
+  padding: 2.5rem 2rem;
+  max-width: 400px;
+  width: 100%;
+  color: #fff;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+  align-items: center;
+}
+
+@media (max-width: 500px) {
+  .card-container {
+    padding: 1.2rem 0.5rem;
+    max-width: 98vw;
+  }
+}
+
+/* ProfileCard 元件樣式 */
+.profile-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+.avatar {
+  width: 110px;
+  height: 110px;
+  border-radius: 50%;
+  object-fit: cover;
+  border: 3px solid #2e4d3a;
+  margin-bottom: 0.5rem;
+  box-shadow: 0 2px 8px rgba(0,0,0,0.12);
+}
+.profile-card h1 {
+  font-size: 1.6rem;
+  margin: 0.2rem 0 0 0;
+}
+.profile-card h2 {
+  font-size: 1.1rem;
+  font-weight: 400;
+  margin: 0;
+  color: #b6e2b6;
+}
+.email-btn {
+  margin-top: 0.7rem;
+  background: #2e4d3a;
+  color: #fff;
+  padding: 0.5rem 1.2rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: background 0.2s;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+}
+.email-btn:hover {
+  background: #3e6b4c;
+}
+
+/* CertificateList & ExperienceList */
+section {
+  width: 100%;
+}
+section h3 {
+  margin-bottom: 0.3rem;
+  font-size: 1.1rem;
+  color: #b6e2b6;
+}
+section ul {
+  margin: 0 0 0.5rem 0;
+  padding-left: 1.2rem;
+}
+section li {
+  margin-bottom: 0.2rem;
+  font-size: 1rem;
+}
+
+/* Portfolio */
+.portfolio-list {
+  display: flex;
+  gap: 0.7rem;
+  flex-wrap: wrap;
+  justify-content: flex-start;
+}
+.portfolio-item {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  background: #224d36;
+  border-radius: 12px;
+  padding: 0.5rem 0.7rem;
+  text-decoration: none;
+  color: #fff;
+  width: 90px;
+  transition: background 0.2s, transform 0.2s;
+}
+.portfolio-item:hover {
+  background: #2e6b4c;
+  transform: translateY(-3px) scale(1.04);
+}
+.portfolio-item img {
+  width: 60px;
+  height: 60px;
+  object-fit: cover;
+  border-radius: 8px;
+  margin-bottom: 0.3rem;
+}
+
+/* SocialLinks */
+.social-links {
+  display: flex;
+  gap: 1.1rem;
+  margin-top: 0.7rem;
+}
+.social-links a {
+  color: #b6e2b6;
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 1.1rem;
+  transition: color 0.2s;
+}
+.social-links a:hover {
+  color: #fff;
+  text-shadow: 0 2px 8px #2e6b4c;
+}
