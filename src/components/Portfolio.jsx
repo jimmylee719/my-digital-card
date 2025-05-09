@@ -8,7 +8,10 @@ const Portfolio = () => (
       {portfolio.map((item, idx) => (
         <a className="portfolio-item" href={item.link} key={idx} target="_blank" rel="noopener noreferrer">
           <img src={item.image} alt={item.title_zh} />
-          <div>{item.title_zh} / {item.title_en}</div>
+          <div className="portfolio-title">
+            <span className="item-icon">{item.icon}</span>
+            <span>{item.title_zh} / {item.title_en}</span>
+          </div>
         </a>
       ))}
     </div>

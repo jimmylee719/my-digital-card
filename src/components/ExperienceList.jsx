@@ -4,9 +4,12 @@ import { experiences } from '../data';
 const ExperienceList = () => (
   <section>
     <h3>學經歷 Education & Experience</h3>
-    <ul>
+    <ul className="icon-list">
       {experiences.map((exp, idx) => (
-        <li key={idx}>{exp.zh} / {exp.en}</li>
+        <li key={idx} className="icon-list-item">
+          <span className="item-icon">{exp.icon}</span>
+          <span>{exp.zh} / {exp.en}</span>
+        </li>
       ))}
     </ul>
   </section>
