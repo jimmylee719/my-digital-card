@@ -2,20 +2,24 @@
 export const profile = {
   name: 'Jimmy Lee',
   company: '參寶寧生物科技股份有限公司',
+  companyDesc: '致力於環境改進，協助企業永續發展，創造0廢棄產品製程',
   email: 'jimmylee0719@gmail.com',
   avatar: '/profile.jpg', // 請將大頭照放在 public 資料夾
 };
 
 // 證照
 export const certificates = [
-  { icon: '🎓', zh: '生物技術師證照', en: 'Biotech License' },
-  { icon: '🧪', zh: '化學分析師證照', en: 'Chemical Analyst License' },
+  { icon: '📋', zh: 'HACCP-Basic', en: 'HACCP-Basic' },
+  { icon: '📋', zh: 'HACCP-Advanced', en: 'HACCP-Advanced' },
 ];
 
 // 學經歷
 export const experiences = [
-  { icon: '🏫', zh: '國立台灣大學生物產業機電工程學系', en: 'NTU, Bio-Industrial Mechatronics Engineering' },
-  { icon: '💼', zh: '參寶寧生物科技股份有限公司 研發工程師', en: 'R&D Engineer, Championing Biotech Co., Ltd.' },
+  { icon: '💼', zh: '匯德生物科技 業務經理', en: 'Sales Manager, WELLHEAD BIOLOGICAL TECHNOLOGY CORP.' },
+  { icon: '💼', zh: '參寶寧生物科技 業務經理', en: 'Sales Manager, SAPONIN BIOLOGICAL TECHNOLOGY CORP.' },
+  { icon: '🎓', zh: '長庚大學 生物科技產業博士', en: 'PhD, CHANG GUNG University, Phd Program in Biotechnology Industrial' },
+  { icon: '🎓', zh: '弘光科技大學 食品科技碩士', en: 'Master, HUNGKUANG University, Department of Food Science and Technology' },
+  { icon: '🎓', zh: '開南大學 觀光與餐飲旅館學士', en: 'Bachelor, KAINAN University, Department of Tourism & Hospitality Management' },
 ];
 
 // 作品集
@@ -34,6 +38,13 @@ export const portfolio = [
     image: '/portfolio2.jpg',
     link: '#',
   },
+];
+
+// 產品與服務
+export const services = [
+  { icon: '📊', zh: '#碳盤查報告', en: '#Carbon Inventory Report' },
+  { icon: '📈', zh: '#碳揭露報告', en: '#Carbon Disclosure Report' },
+  { icon: '🧬', zh: '#生物科技產品代工', en: '#Biotech Product Manufacturing' },
 ];
 
 // 社群連結

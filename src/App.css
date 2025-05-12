@@ -1,6 +1,6 @@
 body, .main-bg {
   min-height: 100vh;
-  background: #102820;
+  background: linear-gradient(135deg, #1a4d2e 0%, #2c6e49 50%, #4a9d5f 100%);
   margin: 0;
   font-family: 'Noto Sans', 'Inter', Arial, sans-serif;
 }
@@ -90,8 +90,23 @@ body, .main-bg {
   color: #b6e2b6;
   text-align: center;
 }
-.email-btn {
+
+.company-desc {
+  font-size: 0.9rem;
+  color: #b6e2b6;
+  text-align: center;
+  margin: 0.5rem 0;
+  line-height: 1.4;
+  max-width: 90%;
+}
+
+.contact-buttons {
+  display: flex;
+  justify-content: center;
   margin-top: 0.7rem;
+}
+
+.consult-btn, .email-btn {
   background: #2e4d3a;
   color: #fff;
   padding: 0.5rem 1.2rem;
@@ -104,9 +119,41 @@ body, .main-bg {
   position: relative;
   overflow: hidden;
 }
-.email-btn:active {
+
+.consult-btn:hover, .email-btn:hover {
   background: #3e6b4c;
   box-shadow: 0 2px 8px #2e6b4c44;
+}
+
+.consult-btn:active, .email-btn:active {
+  background: #3e6b4c;
+  box-shadow: 0 2px 8px #2e6b4c44;
+}
+
+.email-btn {
+  background: #2e4d3a;
+  color: #fff;
+  padding: 0.7rem 1.5rem;
+  border-radius: 20px;
+  text-decoration: none;
+  font-weight: 500;
+  transition: all 0.2s ease;
+  box-shadow: 0 1px 4px rgba(0,0,0,0.08);
+  display: inline-flex;
+  align-items: center;
+  gap: 0.5em;
+  font-size: 1.1rem;
+}
+
+.email-btn:hover {
+  background: #3e6b4c;
+  box-shadow: 0 4px 12px rgba(46, 107, 76, 0.3);
+  transform: translateY(-2px);
+}
+
+.email-btn:active {
+  background: #2e4d3a;
+  transform: translateY(0);
 }
 
 /* icon 列表通用樣式 */
@@ -208,10 +255,16 @@ section li {
   transition: color 0.2s, text-shadow 0.2s, transform 0.2s;
   display: flex;
   align-items: center;
-  gap: 0.3em;
+  gap: 0.5em;
 }
 .social-links a:hover {
   color: #fff;
   text-shadow: 0 2px 8px #2e6b4c;
   transform: scale(1.08);
+}
+
+.social-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
 }
