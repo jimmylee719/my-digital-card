@@ -1,6 +1,6 @@
 // 個人資料
 export const profile = {
-  name: 'Jimmy Lee',
+  name: 'Dr.Jimmy Lee',
   company: '參寶寧生物科技股份有限公司',
   companyDesc: '致力於環境改進，協助企業永續發展，創造0廢棄產品製程',
   email: 'jimmylee0719@gmail.com',
@@ -9,8 +9,8 @@ export const profile = {
 
 // 證照
 export const certificates = [
-  { icon: '📋', zh: 'HACCP-Basic', en: 'HACCP-Basic' },
-  { icon: '📋', zh: 'HACCP-Advanced', en: 'HACCP-Advanced' },
+  { icon: '📋', zh: 'HACCP-Basic', en: '' },
+  { icon: '📋', zh: 'HACCP-Advanced', en: '' },
 ];
 
 // 學經歷
@@ -43,13 +43,15 @@ export const portfolio = [
 // 產品與服務
 export const services = [
   { icon: '📊', zh: '#碳盤查報告', en: '#Carbon Inventory Report' },
-  { icon: '📈', zh: '#碳揭露報告', en: '#Carbon Disclosure Report' },
+  { icon: '📈', zh: '#TCFD/CDP 報告撰寫輔導', en: '#TCFD/CDP Report Writing Guidance' },
+  { icon: '🎯', zh: '#SBTi 目標設定', en: '#SBTi Target Setting' },
+  { icon: '👣', zh: '#產品碳足跡', en: '#Product Carbon Footprint' },
   { icon: '🧬', zh: '#生物科技產品代工', en: '#Biotech Product Manufacturing' },
 ];
 
 // 社群連結
 export const socialLinks = [
-  { name: 'GitHub', url: 'https://github.com/jimmylee719', icon: '🐙' },
-  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jimmy-lee-a5b5a0315', icon: '🔗' },
+  { name: 'GitHub', url: 'https://github.com/jimmylee719', icon: '💻' },
+  { name: 'LinkedIn', url: 'https://www.linkedin.com/in/jimmy-lee-a5b5a0315', icon: '👤' },
   // 可自行增加
 ]; 
